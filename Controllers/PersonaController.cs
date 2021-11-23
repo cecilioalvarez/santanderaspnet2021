@@ -23,11 +23,11 @@ namespace net.Controllers
             return View();
         }
 
-        public IActionResult RecibirDatosPersona(string nombre, int edad, bool jubilado) {
+        public IActionResult RecibirDatosPersona(Persona persona) {
 
-            ViewBag.nombre=nombre;
-            ViewBag.edad=edad;
-            ViewBag.jubilado=jubilado;
+            ViewBag.nombre=persona.Nombre;
+            ViewBag.edad=persona.Edad;
+            ViewBag.jubilado=persona.Jubilado;
             return View();
         }
 
