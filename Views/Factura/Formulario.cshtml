@@ -1,0 +1,26 @@
+<form action="Insertar">
+    <fieldset>
+        <legend>formulario facturacion</legend>
+        <p><label for="Numero">Numero</label>
+            <input type="text" name="Numero" id="Numero" placeholder="introduce numero" />
+        </p>
+        <p><label for="Concepto">Concepto</label>
+            <input type="text" name="Concepto" id="Concepto" placeholder="introduce concepto" />
+        </p>
+        <p><label for="importe">Importe</label>
+            <input type="text" name="Importe" id="Importe" placeholder="introduce importe" />
+        </p>
+        <p>
+        <input type="radio" name="TipoIVA" id="TipoFacturaIVA" value="IVA"><label for="TipoFacturaIVA">IVA</label>
+        </p>
+          <p>
+        <input type="radio" name="TipoIVA" id="TipoFacturaSinIVA" value="SinIVA" ><label for="TipoFacturaSinIVA">Sin IVA</label>
+        </p>
+        <p>
+            <input type="checkbox" name="pagada" id="pagada" value="true"/><label for="pagada">Pagada</label>
+        </p>
+        <p>
+            <input type="submit" value="enviar" />
+        </p>
+    </fieldset>
+</form>

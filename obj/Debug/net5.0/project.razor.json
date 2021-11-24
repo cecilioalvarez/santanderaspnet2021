@@ -15702,6 +15702,11 @@
       "FilePath": "/Users/cecilioalvarezcaules/Desktop/cursohtml/net/Views/Home/Mensaje.cshtml",
       "TargetPath": "Views\\Home\\Mensaje.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/cecilioalvarezcaules/Desktop/cursohtml/net/Views/Factura/Formulario.cshtml",
+      "TargetPath": "Views\\Factura\\Formulario.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

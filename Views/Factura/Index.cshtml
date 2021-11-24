@@ -1,14 +1,27 @@
-<form action="RecibirDatosFactura">
-<p><label for="Numero">Numero</label>
-<input type="text" name="numero" id="numero"/>
-</p>
-<p><label for="Concepto">Concepto</label>
-<input type="text" name="Concepto" id="Concepto"/>
-</p>
-<p><label for="importe">Importe</label>
-<input type="text" name="importe" id="importe" />
-</p>
-<p>
-    <input type="submit" value="enviar"/>
-</p>
-</form>
+<html>
+
+<body>
+    <table>
+        <tr>
+            <th>Numero</th>
+            <th>Concepto</th>
+            <th>Importe</th>
+            <th>TipoIVA</th>
+            <th>Pagada</th>
+        </tr>
+
+        @foreach (var factura in ViewBag.ListaFacturas)
+        {
+            <tr>
+                <td>@factura.Numero</td>
+                <td>@factura.Concepto</td>
+                <td>@factura.Importe</td>
+                <td>@factura.TipoIVA</td>
+                <td>@factura.Pagada</td>
+            </tr>
+        }
+    </table>
+    <a href="formulario">ir al formulario</a>
+</body>
+
+</html>
