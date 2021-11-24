@@ -46,5 +46,5 @@
 /Users/cecilioalvarezcaules/Desktop/cursohtml/net/obj/Debug/net5.0/Razor/Views/Persona/Index.cshtml.g.cs
 /Users/cecilioalvarezcaules/Desktop/cursohtml/net/obj/Debug/net5.0/Razor/Views/Persona/RecibirDatosPersona.cshtml.g.cs
 /Users/cecilioalvarezcaules/Desktop/cursohtml/net/obj/Debug/net5.0/Razor/Views/Factura/Index.cshtml.g.cs
-/Users/cecilioalvarezcaules/Desktop/cursohtml/net/obj/Debug/net5.0/Razor/Views/Factura/RecibirDatosFactura.cshtml.g.cs
 /Users/cecilioalvarezcaules/Desktop/cursohtml/net/obj/Debug/net5.0/Razor/Views/Factura/Formulario.cshtml.g.cs
+/Users/cecilioalvarezcaules/Desktop/cursohtml/net/obj/Debug/net5.0/Razor/Views/Factura/Detalle.cshtml.g.cs

@@ -33,14 +33,16 @@ namespace net.Controllers
             ViewBag.ListaFacturas = FacturaRepositorio.Lista;
             return View("Index");
         }
-        public IActionResult Detalle(Factura factura)
+        public IActionResult Detalle(int numero)
         {
-
-            ViewBag.Numero = factura.Numero;
+            
+            ViewBag.Numero = numero;
+            /*
             ViewBag.Concepto = factura.Concepto;
             ViewBag.Importe = factura.Importe;
             ViewBag.TipoIVA = factura.TipoIVA;
             ViewBag.Pagada = factura.Pagada;
+            */
             return View();
         }
 

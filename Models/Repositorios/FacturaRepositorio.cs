@@ -23,6 +23,17 @@ public class FacturaRepositorio {
 
         Lista.Add(factura);
     }
+
+     public static Factura BuscarUna(int numero) {
+
+       for (int i=0;i<Lista.Count;i++) {
+
+           if (Lista[i].Numero==numero){
+               return Lista[i];
+           }
+       }
+       return  null;
+    }
     
     }
 

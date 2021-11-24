@@ -15634,11 +15634,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/cecilioalvarezcaules/Desktop/cursohtml/net/Views/Factura/RecibirDatosFactura.cshtml",
-      "TargetPath": "Views\\Factura\\RecibirDatosFactura.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/Users/cecilioalvarezcaules/Desktop/cursohtml/net/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -15671,6 +15666,11 @@
     {
       "FilePath": "/Users/cecilioalvarezcaules/Desktop/cursohtml/net/Views/Factura/Index.cshtml",
       "TargetPath": "Views\\Factura\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/cecilioalvarezcaules/Desktop/cursohtml/net/Views/Factura/Detalle.cshtml",
+      "TargetPath": "Views\\Factura\\Detalle.cshtml",
       "FileKind": "mvc"
     },
     {
