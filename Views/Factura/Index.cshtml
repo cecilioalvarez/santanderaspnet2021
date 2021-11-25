@@ -7,7 +7,7 @@
             <th>Concepto</th>
             <th>Importe</th>
             <th>Ver Detalle</th>
-           
+
         </tr>
 
         @foreach (var factura in ViewBag.ListaFacturas)
@@ -16,11 +16,13 @@
                 <td>@factura.Numero</td>
                 <td>@factura.Concepto</td>
                 <td>@factura.Importe</td>
-                <td><a href="Detalle?numero=@factura.Numero">ir a detalle</a></td>
+                <td><a href="/factura/Detalle?numero=@factura.Numero">ir a detalle</a></td>
+                <td><a href="/factura/Borrar?numero=@factura.Numero">borrar</a></td>
+
             </tr>
         }
     </table>
-    <a href="formulario">ir al formulario</a>
+    <a href="/factura/formulario">ir al formulario</a>
 </body>
 
 </html>

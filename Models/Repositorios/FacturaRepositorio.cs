@@ -6,7 +6,7 @@ namespace net.Models.Repositorios
 
 public class FacturaRepositorio {
 
-    public static List<Factura> Lista {get;set;}
+    private static List<Factura> Lista;
 
     static FacturaRepositorio () {
 
@@ -34,7 +34,25 @@ public class FacturaRepositorio {
        }
        return  null;
     }
+
+     public static void Borrar(int numero) {
+
+       for (int i=0;i<Lista.Count;i++) {
+
+           if (Lista[i].Numero==numero){
+               
+                Lista.Remove(Lista[i]);
+                break;
+           }
+       }
+     
+    }
     
+    public static List<Factura> BuscarTodos() {
+
+            return Lista;
+    }
+
     }
 
 }

@@ -20,7 +20,7 @@ namespace net.Controllers
 
         public IActionResult Index()
         {
-            ViewBag.ListaFacturas = FacturaRepositorio.Lista;
+            ViewBag.ListaFacturas = FacturaRepositorio.BuscarTodos();
             return View();
         }
 
@@ -30,13 +30,14 @@ namespace net.Controllers
             // yo inserto y despues de insertar
             // vuelto a mostrar el listado
             FacturaRepositorio.Insertar(factura);
-            ViewBag.ListaFacturas = FacturaRepositorio.Lista;
-            return View("Index");
+
+            return RedirectToAction("Index", "Factura");
         }
         public IActionResult Detalle(int numero)
         {
-            
-            ViewBag.Numero = numero;
+
+            ViewBag.Factura = FacturaRepositorio.BuscarUna(numero);
+
             /*
             ViewBag.Concepto = factura.Concepto;
             ViewBag.Importe = factura.Importe;
@@ -45,6 +46,17 @@ namespace net.Controllers
             */
             return View();
         }
+
+        public IActionResult Borrar(int numero)
+        {
+
+            FacturaRepositorio.Borrar(numero);
+
+            //ViewBag.ListaFacturas = FacturaRepositorio.BuscarTodos();
+
+            return RedirectToAction("Index", "Factura");
+        }
+
 
         public IActionResult Formulario()
         {
